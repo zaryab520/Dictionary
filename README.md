@@ -6,6 +6,8 @@ program should also provide another interface (command line) and provide users t
 Languages:
 python3
 
+System Requirements:  Linux Operating system - ubuntu
+
 Python Modules to use:
 xlsxwriter,  openpyxlsx
 
