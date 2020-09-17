@@ -19,11 +19,12 @@ python3
     
 
 # How does it work?
- . The program includes two modules naming 'translate_word.py' and 'add_new_word.py' and an excel sheet as database/source called 'dictionary.xlsx'.
- . to start with the application run translate_word.py from command line. enter this code >>>python3 translate_word.py
- . The application ask the user to enter English word to transalte, it then prompt the user to choose the language of translation either Dari or pashto
- . If the entered word does not exists in the dictionary it prompt the user if he/she wants to add the word in the Dictionary.
- . If wants to add new word, the user will be asked to enter the Dari and pashto translation of the word, and then it adds the word to dictionary.
+ - The program includes two modules naming 'translate_word.py' and 'add_new_word.py' and an excel sheet as database/source called 'dictionary.xlsx'.
+ - translate_word.py consists the translation codes, and add_new_word.py is responsible for adding new word to dictionary.
+ - to start with the application run translate_word.py from command line. enter this code >>>python3 translate_word.py
+ - The application ask the user to enter English word to transalte, it then prompt the user to choose the language of translation either Dari or pashto
+ - If the entered word does not exists in the dictionary it prompt the user if he/she wants to add the word in the Dictionary.
+ - If wants to add new word, it calls newdic() function in add_new_word.py the user will be asked to enter the Dari and pashto translation of the word, and then it adds the word to dictionary.
 
 
 # How to Contribute
