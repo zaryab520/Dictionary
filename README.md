@@ -3,10 +3,10 @@ Language in Python which uses an Excel file as the source (database) to show res
 program should first ask the user for the English word, then should prompt for the language that user needs the word to be translated to (Dari/Pashto).
 program should also provide another interface (command line) and provide users the ability to add new translations to the dictionary if it does not exist.
 
+How to run: As it is CLI application, the user must write the following in the prompt >>>python3 test4.py
+
 Languages:
 python3
-
-System Requirements:  Linux Operating system - ubuntu
 
 Python Modules to use:
 xlsxwriter,  openpyxlsx
