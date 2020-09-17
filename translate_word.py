@@ -1,6 +1,6 @@
 import xlsxwriter
 import openpyxl
-import test3
+import add_new_word
 
 
 
@@ -31,7 +31,7 @@ def dic():
             break
 
     if d1a == "A": 
-        wb = openpyxl.load_workbook('test5.xlsx') 
+        wb = openpyxl.load_workbook('dictionary.xlsx') 
         ws = wb['emailcontent']
         flag = False
         for row in ws.iter_rows(ws.min_row, ws.max_row):
@@ -47,8 +47,7 @@ def dic():
         else:
             userval = input('No such word found. Do you want to add the word in the Dictionary? (y/n): ')
             if userval == 'y':
-                import test3
-                test3.newdic()
+                add_new_word.newdic()
             else:
                 print('thanks for using our product')
 
@@ -56,7 +55,7 @@ def dic():
 
 
     elif d1a == "B": 
-        wb = openpyxl.load_workbook('test5.xlsx')
+        wb = openpyxl.load_workbook('dictionary.xlsx')
         ws = wb['emailcontent']
         flag = False
         for row in ws.iter_rows(ws.min_row, ws.max_row):
@@ -73,7 +72,7 @@ def dic():
             userval = input('No such word found. Do you want to add the word in the Dictionary? (y/n): ')
             if userval == 'y':
                 
-                test3.newdic()
+                add_new_word.newdic()
                 
             else:
                 print('Thank you for using our product')                   

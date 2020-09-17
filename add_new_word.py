@@ -14,7 +14,7 @@ def newdic():
     NewWord = newword.upper()
 
     
-    wb = openpyxl.load_workbook('test5.xlsx')
+    wb = openpyxl.load_workbook('dictionary.xlsx')
     ws = wb.active
     row = ws.max_row
     column = ws.max_column
@@ -30,7 +30,7 @@ def newdic():
     Dari_trans = input('Enter the Dari Translation of the word: ')
     pashot_trans = input('Enter the Pashto Translation of the word: ')
 
-    wb = openpyxl.load_workbook('test5.xlsx')
+    wb = openpyxl.load_workbook('dictionary.xlsx')
     ws = wb.active
     row = ws.max_row
     column = ws.max_column
@@ -39,4 +39,4 @@ def newdic():
     for value in dic_list:
         ws.cell(row+1, column-5).value = value
         column+=1
-    wb.save('test5.xlsx')
+    wb.save('dictionary.xlsx')
